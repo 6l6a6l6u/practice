@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <h1>task</h1>
+    <script>
+        //The error in the code is a syntax error. The double quotes used around the string in the alert statement are not valid JavaScript quotes. They should be changed to valid double quotes (") or single quotes (').
+        
+
+ alert("I'm JavaScript!");
+ 
+//The script tag in the HTML file is referencing the incorrect file name. It should be changed to "script.js" instead of "scripts.js" to match the actual file name.
+
+
+    </script>
+    <script src="script.js"></script>
+<script>//In the JavaScript code, there is a missing semicolon after the first alert statement. The code should include a semicolon at the end of each statement for proper syntax.
+alert("I'm JavaScript!");
+alert('Hello');
+alert(`Wor ld`);
+alert(3 + 1 + 2);
+
+</script>
+
+<script>
+    //The code is missing the closing double quote in the alert statement. It should be added at the end of the string to fix the syntax error.
+    let admin = 9, fname = 10.5;
+fname = "Guvi";
+lname = "geek";
+admin = fname + " " + lname;
+alert(admin);
+
+</script>
+
+<script>
+    //The alert statement is using single quotes around the string instead of backticks. To use template literals and interpolate the name variable, backticks should be used.
+    let fname = 10.5;
+fname = "Guvi";
+lname = "geek";
+let name = fname + lname;
+alert(`hello ${name}`);
+
+</script>
+
+<script>
+    //The prompt function returns a string, so the inputs received from prompt need to be converted to numbers using the parseInt function before adding them. Otherwise, the + operator will concatenate the strings instead of performing addition.
+    let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(parseInt(a) + parseInt(b));
+
+</script>
+<script>
+    //The condition value === 4 is comparing the input value with the number 4, but the value returned from the prompt function is a string. To compare the input value as a number, it should be converted using the parseInt function.
+    let value = parseInt(prompt('How many runs you scored in this ball'));
+if (value === 4) {
+  console.log("You hit a Four");
+} else if (value === 6) {
+  console.log("You hit a Six");
+} else {
+  console.log("I couldn't figure out");
+}
+</script>
+
+<script>//The ternary operator in the code is missing the middle condition. It should be modified to include the condition login === 'Director' in the middle.
+
+let login = 'Employee';
+let message =
+  login === 'Employee' ? 'Welcome' :
+  login === 'Director' ? 'Greetings' :
+  login === '' ? 'No login' :
+  '';
+console.log(message);
+
+</script>
+
+<script>
+
+    //The let keyword is being used again inside the if and else blocks, which creates a new block-scoped variable instead of updating the existing one. The let keyword should be removed from both the if and else blocks to assign a value to the outer message variable.
+
+    let message;
+let lock = 2;
+if (null || lock || undefined) {
+  message = "Go away";
+} else {
+  message = "welcome";
+}
+console.log(message);
+
+</script>
+
+<script>
+
+    //The condition lock && " " || undefined is using the logical OR operator incorrectly. To fix it, parentheses should be added to ensure that the && operator is evaluated first.
+
+    let message;
+let lock = 2;
+if (lock && (" " || undefined)) {
+  message = "Go away";
+} else {
+  message = "welcome";
+}
+console.log(message);
+
+</script>
+
+<script>
+
+    //To print the numbers 3, 2, 1, the condition i in the while loop should be changed to i > 0, and the decrement operator should be moved before the console.log statement.
+
+    let i = 3;
+while (i > 0) {
+  console.log(i--);
+}
+
+</script>
+
+<script>
+
+    //To print the numbers 1 to 10 in 4 lines, a loop can be used with a counter variable. The counter variable can be incremented by 1 in each iteration, and the console.log statement can be placed inside the loop to print the current value of the counter.
+    let num = 1;
+for (let i = 0; i < 10; i++) {
+  console.log(num++);
+}
+
+</script>
+
+<script>
+
+    //The condition in the for loop is checking if num <= 20, which will include odd numbers as well. To print only even numbers, the condition can be changed to num <= 20 and the counter variable can be incremented by 2 in each iteration.
+
+    for (let num = 2; num <= 20; num += 2) {
+  console.log(num);
+}
+
+</script>
+
+<script>
+
+    //In the console.log statement, the template literal syntax is not correctly used. The backticks () should be used instead of single quotes ('), and the variable gifts[i]should be wrapped in${}` to interpolate the value.
+
+    let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+
+</script>
+
+<script>
+
+    //The while loop in the code is an infinite loop because the condition countdown > 0 is never updated inside the loop. To disarm the bomb, the condition should be changed to countdown >= 0 to include the case when countdown becomes zero.
+
+    let countdown = 100;
+while (countdown >= 0) {
+  countdown--;
+  if (countdown === 0) {
+    console.log("bomb triggered");
+  }
+}
+
+</script>
+
+<script>
+
+    //
+</script>
+</body>
+</html>
